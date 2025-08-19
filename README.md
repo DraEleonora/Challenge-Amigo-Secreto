@@ -33,17 +33,6 @@ O design foi personalizado com **HTML + CSS**, mantendo foco na simplicidade e u
 
 ---
 
-### 📂 Estrutura do projeto
-
-📦 amigo-secreto
-┣ 📂 assets
-┣ 📜 app.js
-┣ 📜 index.html
-┗ 📜 README.md
-┣ 📜 style.css
-
----
-
 ### ▶️ Como executar o projeto
 
 1. Clone este repositório:
