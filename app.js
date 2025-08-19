@@ -14,6 +14,7 @@ function adicionarAmigo() {
     }
 
     amigos.push(nome);
+    todosAmigos.push(nome); // guarda também na lista original
     input.value = ""; // limpa o campo
     atualizarLista();
 }
@@ -30,15 +31,21 @@ function atualizarLista() {
     }
 }
 
-// Função para sortear um amigo
+// Função para sortear um amigo SEM REPETIÇÃO
 function sortearAmigo() {
     if (amigos.length === 0) {
-        alert("Adicione pelo menos um nome antes de sortear!");
+        alert("Todos os amigos já foram sorteados ou a lista está vazia!");
         return;
     }
 
     let indice = Math.floor(Math.random() * amigos.length);
     let sorteado = amigos[indice];
 
-    document.getElementById("resultado").innerHTML = `🎉 O amigo secreto sorteado é: <strong>${sorteado}</strong>`;
+    // Remove o amigo sorteado do array
+    amigos.splice(indice, 1);
+
+    document.getElementById("resultado").innerHTML = 
+        `🎉 O amigo secreto sorteado é: <strong>${sorteado}</strong>`;
+
+    atualizarLista();
 }
