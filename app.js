@@ -49,3 +49,15 @@ function sortearAmigo() {
 
     atualizarLista();
 }
+
+// Função para reiniciar o sorteio
+function reiniciarSorteio() {
+    if (todosAmigos.length === 0) {
+        alert("Nenhum amigo foi adicionado ainda!");
+        return;
+    }
+
+    amigos = [...todosAmigos]; // restaura a lista original
+    document.getElementById("resultado").innerHTML = ""; // limpa o resultado
+    atualizarLista();
+}
