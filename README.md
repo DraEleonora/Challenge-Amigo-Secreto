@@ -49,21 +49,6 @@ O design foi personalizado com **HTML + CSS**, mantendo foco na simplicidade e u
 
 ---
 
-### 🌐 Publicação no GitHub Pages
-
-Se desejar publicar:
-
-1. Vá em **Settings > Pages** no repositório do GitHub.
-2. Escolha a branch `main` e a pasta `/root`.
-3. Clique em salvar.
-4. O projeto ficará disponível em:
-
-   ```
-   https://DraEleonora.github.io/Challenge-Amigo-Secreto/
-   ```
-
----
-
 ### 📌 Melhorias futuras
 
 * Permitir importar/exportar a lista de amigos.
