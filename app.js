@@ -1,4 +1,7 @@
+// Array que vai armazenar os nomes
 let amigos = []
+// Array para armazenar todos os amigos
+let todosAmigos = [];
 
 // Função para adicionar amigos
 function adicionarAmigo() {
